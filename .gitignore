@@ -1,0 +1,10 @@
+# Chrome 打包生成的密钥
+*.pem
+*.crx
+
+# 临时文件
+chrome-profile/
+ext.zip
+modified.zip
+load_ext.bat
+*.png

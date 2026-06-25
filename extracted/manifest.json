@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "账号填充器",
+  "description": "账号填充器",
+  "version": "1.0",
+  "options_page": "options.html",
+  "permissions": ["storage"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "icons": {
+    "16": "icon/icon.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["js/jquery-1.7.1.min.js", "js/JavaScript.js"],
+      "css": ["css/css2.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_icon": "icon/icon.png",
+    "default_popup": "popup.html"
+  }
+}

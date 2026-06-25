@@ -1,0 +1,360 @@
+ 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>账号填充器-填写帐号信息</title>
+    <link rel="stylesheet" type="text/css" href="css/options.css" media="all">
+    <script src="js/jquery-1.7.1.min.js"></script>
+
+    <style>
+        body {
+            padding-top: 10px;
+            font-family: "Microsoft YaHei";
+            font-size: 14px;
+            margin: 0;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 900px;
+        }
+
+        #header {
+            height: 100px;
+            background: #fff;
+            margin-bottom: 5px;
+        }
+
+        #mainContent {
+            min-height: 710px;
+            margin-bottom: 5px;
+        }
+
+        #sidebar {
+            float: left;
+            width: 200px;
+            min-height: 720px;
+            background: #313955;
+        }
+
+        #content {
+            float: right;
+            width: 695px;
+            min-height:710px;
+            background: #fff;
+        }
+
+        #footer {
+            height: 60px;
+            background: #fff;
+        }
+
+        #header {
+            background-image: url("../settings/logo.png");
+            background-repeat: no-repeat;
+            background-position: 8% 50%;
+        }
+
+        .segmentation div:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 123px;
+            left: 0;
+            background-color: #2387ef;
+        }
+
+
+
+        .sidenav .current {
+            box-shadow: inset 5px 0px #2387ef;
+            background-color: #304165;
+        }
+
+        .sidenav .last {
+            margin-bottom: 0;
+        }
+
+        .settings-info {
+            margin-top: 20px;
+            margin-left: 20px;
+            box-shadow: inset 5px 0px #2387ef;
+        }
+
+        .settings-info1 {
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+
+        .settings-text {
+            margin-left: 15px;
+        }
+
+        .settings-tiptext {
+            color: #a7a7a7;
+            font-size: 10px;
+            margin-left: 15px;
+        }
+
+
+
+        .myedit {
+            position: relative;
+            top: 3px;
+            width: 44%;
+            margin: 15px;
+        }
+
+        .settings-list select {
+            border: 1px solid transparent;
+            border-color: #2387ef;
+            margin: 15px;
+            margin-left: 35px;
+            width: 42%;
+        }
+
+        .settings-add {
+            margin: 15px;
+            margin-left: 20px;
+        }
+
+        #subscriptionTemplate, #addSubscriptionContainer, #customSubscriptionContainer {
+            display: none;
+        }
+
+        .addContent, .CustomContent, .addButtonContent {
+            position: relative;
+            margin: 15px;
+            margin-left: 35px;
+        }
+
+        .sidenav {
+            width: 200px;
+            padding: 0 0 0 0;
+            margin-top: 20px;
+            list-style: none;
+        }
+
+            .sidenav li {
+                height: 60px;
+                line-height: 60px;
+                width: 100%;
+                color: white;
+                text-align: center;
+                opacity: 0.4;
+            }
+
+            .sidenav .current {
+                opacity: 1;
+            }
+            .sidenav .i0 {
+                background-image: url("../images/liebiao.png");
+                background-repeat: no-repeat;
+                background-position: 20% 50%;
+            }
+
+            .sidenav .i3 {
+                background-image: url("../images/shezhi.png");
+                background-repeat: no-repeat;
+                background-position: 20% 50%;
+            }
+
+            .sidenav a:after {
+            }
+
+            .sidenav .on:after {
+            }
+
+            .sidenav .on {
+            }
+
+            .sidenav .last {
+            }
+    </style>
+
+</head>
+
+<body  >
+    <div id="container">
+        <!-- 头部begin -->
+        <div id="header" style="width: 900px; height: 120px">
+            <div class="segmentation">
+                <div>
+                    <font face="微软雅黑" style="line-height:22px;">
+                        公告 : 本插件适用于所有网站上面的注册和登录页面，页面打开时自动匹配和填写对应的信息，无需额外操作，
+                    如果自动匹配不正确时，你可以点击输入框，将出现下拉框供你重新选择。<a href="xiaoGuo.html" target="_blank">点击查看效果</a>
+                  
+                    <b style="color:red;margin-top:10px;">（客官，能否打赏个小红包！） </b>
+                    </font><p style="margin-top:10px;">
+                        <font face="微软雅黑" size="6" color="#2387EF">设置</font>
+                    </p>
+                </div>
+            </div>
+        </div> <!-- 头部end -->
+        <div id="mainContent">
+            <!-- 主体begin --> <!-- sidebar begin -->
+            <div id="sidebar">
+                <div class="sidenav" id="sidenav-tips">
+                    <li class="i3 js-sindenav-item current" data-hash="sidenav-t3">账号设置</li>
+                    <li class="i0 js-sindenav-item " data-hash="sidenav-t0"><a href="xiaoGuo.html" target="_blank" style="color:#fff;text-decoration:none;">使用指南</a>
+         </li>
+                </div>
+                <div>
+                    <ul style="padding: 0px; margin: 0; color: #FFF">
+                        
+                        <dd style=" -webkit-margin-start:27px;"> 
+                        <li>支付宝二维码：<img src="images/alipay.jpg" title="用支付宝扫描二维码！" width="150" style="margin-top:10px;"/></li>
+                        <li>微信支付二维码：<img src="images/weixin.jpg" title="用微信扫描二维码！" width="150" style="margin-top:10px;" /></li>
+                        </dd>
+                    </ul>
+                </div>
+                <div id="shuoMing">
+                    <ul style="padding: 0px; margin-top: 20px; color: #FFF;font-size:14px;">
+                        <dd style="padding:0;margin:0;font-weight:bold;line-height:24px;margin-left:20px;">使用步骤：</dd>
+                        <dd style=" -webkit-margin-start:27px;padding-right:10px;">
+                        <li>第一步：填写本页面上的字段值，每项可填写多个值也可以不填写。</li>
+                        <li>第二步：点击保存。一次保存，永久使用。 </li>
+                        <li>第三步：哈哈&nbsp;&nbsp;从此你可以放荡不羁的上网了。 </li>
+                        </dd>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul style="padding: 0px; margin-top: 20px; color: #FFF;font-size:14px;">
+                        <dd style="padding:0;margin:0;font-weight:bold;line-height:24px;margin-left:20px;">用户感言：</dd>
+                        <dd style=" -webkit-margin-start:27px;padding-right:10px;">
+                        <li>感谢大家使用和支持此插件，我们将努力开发更多实用又免费的网页小工具。
+                        我们的开发创意和灵感来自于你上网过程中的需要，如果你有好的创意或需求，请以邮件形式给我们留言，我们将尽力实现你的需求！邮箱：ge_zhao@qq.com 。</li>
+                   
+                        </dd>
+                    </ul>
+                </div>
+
+            </div> <!-- sidebar end -->
+            <div id="content">
+
+                <div class="content">
+
+
+                    <div id="wrapper">
+                        <header>
+                            帐号设置
+                            <button class="reset">清空</button>
+                            <button class="submit">保存</button>
+                        </header>
+
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+                                <tbody>
+
+
+                                    <tr>
+                                        <th><span class="ExtText">字段名</span></th>
+                                        <th><span class="ExtText">字段值</span></th>
+                                        <th><span class="ExtText">删除</span></th>
+                                        <th><span class="ExtText">增加</span></th>
+                                    </tr>
+                                </tbody>
+                                <tbody id="name"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+                                <tbody id="phone"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+                                <tbody id="email"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="pwd"></tbody>
+                            </table>
+                        </div>
+                      <div>
+                          <font face="微软雅黑" style="line-height: 18px; font-size: 14px; color: red;">
+                      风险提示：<br />
+                              1.仅适合保存非重要密码，切勿保存类似于淘宝登录密码和支付密码一类的信息，以免造成你的财产损失！
+                              2.密码仅适合在私人电脑上保存，非私人电脑上请谨慎使用，以免密码被他人利用！<br /> 
+                              3.如果你的懒癌症或健忘症已病入膏肓，执意要保存密码，万一造成您的财产损失或其他损失，由您个人承担！<br />
+                              ps：此插件上保存的所有信息都是保存于本地电脑浏览器里面，非保存在互联网的服务器上面，降低了个人信息的泄露！
+                          </font>
+
+                      </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="xingMing"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="niCheng"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="cardNum"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="youBian"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="diZhi"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="qq"></tbody>
+                            </table>
+                        </div>
+                        <div class="exclusionScrollBox">
+                            <table id="exclusionRules" style="border-collapse: collapse; width: 650px; margin-top:10px;border:1px solid #2387ef;" border="1" cellpadding="1" cellspacing="2">
+
+                                <tbody id="gsName"></tbody>
+                            </table>
+                        </div>
+                        <button class="reset">清空</button>
+                        <button class="submit">保存</button>
+
+
+
+                    </div>
+
+
+
+
+                  
+                </div>
+            </div> <!-- 主题end -->
+       <div style="clear:both;"></div>
+        </div> <!-- 页尾begin -->
+        <!-- <div id="footer">
+        </div> -->
+        <!-- 页尾end -->
+      
+    </div>
+
+    <div id="header" style="width: 100%; height: 100px; border-top: 2px solid #2387ef;margin-top:20px;">
+        <div class="footer" style="line-height: 30px; width: 100%; text-align: center; margin-top: 15px; ">
+            本插件仅用于网友交流使用，禁止一切商业用途，开发者保留追责权利！<br>
+            当前插件版本：Ver 1.0。邮箱：ge_zhao@qq.com
+        </div>
+    </div> <!-- 头部end -->
+    <script src="js/options.js"></script>
+</body>
+</html>

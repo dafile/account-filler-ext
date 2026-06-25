@@ -1,0 +1,83 @@
+ a {
+      text-decoration:none;}
+ .lead{color:red;}
+      .btn-faux-raised {
+          background-color: #f39c12 !important;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white;
+          border-radius: 8px !important;
+          padding: 0 0 1px 0;
+          font-size: 26px;
+      }
+
+      @media (max-width: 767px) {
+          .btn-faux-raised {
+              font-size: 18px;
+          }
+      }
+
+      .btn-faux-raised .inner-btn {
+          color: white !important;
+          border-radius: 8px !important;
+          background-color: #f1c40f !important;
+          margin-bottom: 10px;
+          padding: 20px 30px;
+      }
+
+      @media (max-width: 767px) {
+          .btn-faux-raised .inner-btn {
+              padding: 10px 15px;
+              font-size: 14px;
+          }
+      }
+
+      .btn-green.btn {
+          background-color: #16a085 !important;
+      }
+
+          .btn-green.btn .inner-btn {
+              color: white !important;
+              background-color: #1abc9c !important;
+          }
+
+      .btn-gray.btn {
+          background-color: #b0bcbc !important;
+      }
+
+          .btn-gray.btn .inner-btn {
+              background-color: #efefef !important;
+              color: #7f8c8d !important;
+          }
+
+      .btn-small-font .inner-btn {
+          font-size: 15px !important;
+      }
+      .sign-in-logo {
+          margin-top: 20px;
+          text-align: center;
+      }
+
+      #sign-in-seamlessly {
+          margin-top: 10px;
+          color: #394d60;
+          text-align: center;
+      }
+
+          #sign-in-seamlessly h1 {
+              font-size: 48px;
+          }
+
+          #sign-in-seamlessly #sign-in-slowly {
+              text-align: center;
+              color: #29b664;
+              margin-top: 15px;
+          }
+
+              #sign-in-seamlessly #sign-in-slowly span {
+                  border-bottom: 1px dotted #29b664;
+                  font-size: 14px;
+                  font-weight: 400;
+              }
