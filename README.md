@@ -1,6 +1,8 @@
 # 账号填充器（二改版）
 
 浏览器扩展，自动填充网页登录表单。基于原版「账号填充器」CRX 扩展修改。
+<img width="626" height="434" alt="image" src="https://github.com/user-attachments/assets/f1cfe278-2969-49bd-a4f2-c3e296794b95" />
+<img width="889" height="682" alt="image" src="https://github.com/user-attachments/assets/d2bd32ce-d541-42f2-a0ce-798dccf06fb7" />
 
 ## 改动说明
 
